@@ -8,11 +8,11 @@ import org.springframework.context.ApplicationContext;
 public class App {
 
 	public static void main(String[] args) {
-		ApplicationContext context = SpringApplication.run(SpringBootApplication.class, args);
+		ApplicationContext context = SpringApplication.run(App.class, args);
 
-		IOutfit outfit = context.getBean(IOutfit.class);
+		// IOutfit outfit = context.getBean(IOutfit.class);
 
-		System.out.println("Outfit: " + outfit);
+		// System.out.println("Outfit: " + outfit);
 
 		Girl girl = context.getBean(Girl.class);
 
